@@ -80,9 +80,8 @@ To be linked to the FNMD, the local database:
 
 ### Optionnal parameters for the matching function mapping_fn
 
-| Parameter               |     Type    | Default value | Description                                                                                                                                                                                                                            |
+| Parameter               |     Type    | Default value | Description|
 |-------------------------|:-----------:|:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-                                                                                                                                                                                          |
 | n_core_to_use           |  `numeric`  |      'NA'     | Number of cores allocated for calculation. By default, the algorithm will automatically choose the most adapated .                                                                                                                                                                                             |
 | max_total_dld           |  `numeric`  |      `2`      | Maximum total Damereau-Levenshtein distance.                                                                                                                                                                                     |
 | max_firstname_dld       |  `numeric`  |      `2`      | Maximum first name Damereau-Levenshtein distance.                                                                                                                                                                                |
@@ -90,8 +89,8 @@ To be linked to the FNMD, the local database:
 | max_birthdate_dld       |  `numeric`  |      `1`      | Maximum birth date Damereau-Levenshtein distance.                                                                                                                                                                                |
 | max_gender_dld          |  `numeric`  |      `1`      | Maximum gender Damereau-Levenshtein distance. 0 or 1.                                                                                                                                                                                    |
 | output_short            |  `boolean`  |    `False`    | Output tibble format.<br>- `True` : output tibble is the local database with a new column "_matched_once_or_more_" which is set to "_yes_" if the subject is linked  at least once with the FNMD file, and set to "_no_" otherwise.<br>- `False` : output tibble is a join of the local database and the FNDM file ; multiple line per subject if multiple records from the FNMD matched. |
-| english_language        |  `boolean`  |    `True`     | Variable language of the output database.<br>- `True` : variables are in English.<br>- `False` : variables are in French.                                                                                                     |
-| automatic_saving        |  `boolean`  |    `True`     | Output results automatic saving.<br>- `True` : saved in the _data_ folder.<br>- `False` : not saved                                                                                                       |
+| english_language        |  `boolean`  |    `True`     | Variable language of the output database.<br>- `True` : variables are in English.<br>- `False` : variables are in French.  |
+| automatic_saving        |  `boolean`  |    `True`     | Output results automatic saving.<br>- `True` : saved in the _data_ folder.<br>- `False` : not saved|
 | death_date_lower_limit   | `character` |""| Format: "AAAA-MM-DD". Earliest death date of interest. If value let by default, all the records from the FNMD will be used. |
 | death_date_upper_limit   | `character` |""| Format: "AAAA-MM-DD". Latest deat date of interest.  If value let by default, all the records from the FNMD will be used.     |
 
