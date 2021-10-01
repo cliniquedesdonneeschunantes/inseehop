@@ -56,12 +56,12 @@ See https://r4ds.had.co.nz/tibbles.html
 To be linked to the FNMD, the local database:
 * **must** contains :
  * **birth name** [type: `character`] **AND/OR** **surname** [type: `character`]
- --* both should be used if possible. At least one of them is necessary to run the script.
+     * both should be used if possible. At least one of them is necessary to run the script.
  * **first name** [type: `character`]
  * **birth date** [type: `Date`]
- --* if you have only the year of birth in your database, you can set the date as 1st january ("YYYY-01-01").
+     * if you have only the year of birth in your database, you can set the date as 1st january ("YYYY-01-01").
 * **should** contain **gender** [type: `character`]
- --* if gender is missing then the value is set to "_unknown_" by the algorithm.
+     * if gender is missing then the value is set to "_unknown_" by the algorithm.
 * **can** contain **city name of birth** (optional, see article) [type: `character`]
 
 
